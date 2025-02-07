@@ -1,0 +1,35 @@
+name: 'Kingly Frontend'
+type: 'Site'
+description: 'Configures Kingly frontend.'
+
+install:
+  - dxpr_theme
+
+config:
+  strict: false
+  import:
+    dxpr_theme:
+      - block.block.dxpr_theme_branding
+      - block.block.dxpr_theme_main_menu
+  actions:
+    block.block.dxpr_theme_tools:
+      setStatus: false
+    block.block.dxpr_theme_admin:
+      setStatus: false
+    block.block.dxpr_theme_branding:
+      setRegion: navigation
+      setWeight: 1
+      setStatus: true
+      simpleConfigUpdate:
+        settings.use_site_name: false
+        settings.use_site_slogan: false
+    block.block.dxpr_theme_main_menu:
+      setRegion: navigation_collapsible
+      setWeight: 1
+      setStatus: true
+    system.theme:
+      simpleConfigUpdate:
+        default: dxpr_theme
+    system.site:
+      simpleConfigUpdate:
+        page.front: /node/1

@@ -1,0 +1,13 @@
+{
+  "name": "erikdekamps/kingly_frontend",
+  "description": "Configures Kingly frontend using DXPR theme.",
+  "version": "dev-main",
+  "type": "drupal-recipe",
+  "license": ["GPL-2.0-or-later"],
+  "require": {
+    "drupal/core": ">=10.3",
+    "drupal/dxpr_theme": "^6.0",
+      "drupal/dxpr_theme_helper": "^2.0"
+  }
+}
+
