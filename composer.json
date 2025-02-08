@@ -1,6 +1,6 @@
 {
   "name": "erikdekamps/kingly_frontend",
-  "description": "Configures Kingly frontend using DXPR theme.",
+  "description": "A drupal recipe that configures Kingly frontend using DXPR theme.",
   "version": "dev-main",
   "type": "drupal-recipe",
   "license": ["GPL-2.0-or-later"],
