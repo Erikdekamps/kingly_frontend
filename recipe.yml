@@ -10,6 +10,22 @@ config:
   import:
     solo:
       - solo.settings
+      - block.block.solo_account_menu
+      - block.block.solo_branding
+      - block.block.solo_breadcrumbs
+      - block.block.solo_content
+      - block.block.solo_footer
+      - block.block.solo_help
+      - block.block.solo_local_actions
+      - block.block.solo_local_tasks
+      - block.block.solo_main_menu
+      - block.block.solo_messages
+      - block.block.solo_page_title
+#      - block.block.solo_powered
+      - block.block.solo_search
+      - block.block.solo_searchform
+      - block.block.solo_userlogin
+
   actions:
 #    block.block.solo_powered:
 #      setStatus: false
