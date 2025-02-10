@@ -138,8 +138,8 @@ primary_menu_keyboard: 1
 primary_menu_megamenu: 0
 primary_menu_megamenu_layout: m-1-1
 primary_menu_submenu_header: 0
-settings_primary_menu___r_bg: '#eff3f6'
-settings_primary_menu___r_tx: '#00365f'
+settings_primary_menu___r_bg: ''
+settings_primary_menu___r_tx: ''
 settings_primary_menu___r_h1: ''
 settings_primary_menu___r_lk: ''
 settings_primary_menu___r_lk_h: ''
@@ -147,11 +147,11 @@ settings_primary_menu___r_br: ''
 settings_primary_menu___r_bg_fr: ''
 settings_primary_menu___r_tx_lk: ''
 settings_primary_menu___r_tx_lk_h: ''
-settings_primary_menu___r_bg_lk: '#eff3f6'
+settings_primary_menu___r_bg_lk: ''
 settings_primary_menu___r_bg_lk_h: ''
 settings_primary_menu___r_tx_bt: ''
 settings_primary_menu___r_tx_bt_h: ''
-settings_primary_menu___r_bg_bt: '#eff3f6'
+settings_primary_menu___r_bg_bt: ''
 settings_primary_menu___r_bg_bt_h: ''
 classes_system_messages: ''
 system_messages_disable_dark: 0
