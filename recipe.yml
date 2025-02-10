@@ -68,10 +68,10 @@ config:
     block.block.solo_admin:
       simple_config_update:
         status: false
-    block.block.solo_search:
-      simple_config_update:
-        status: false
     block.block.solo_search_form:
+      simple_config_update:
+          status: false
+    block.block.solo_search_form_primary:
       simple_config_update:
           status: false
     system.theme:
