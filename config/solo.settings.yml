@@ -210,10 +210,10 @@ settings_breadcrumb___r_bg_bt: ''
 settings_breadcrumb___r_bg_bt_h: ''
 main_2col: solo-col-3-1
 main_3col: solo-col-1-2-1
-site_regions_main_rounded: ''
+site_regions_main_rounded: radius-8
 site_mobile_layout_order: left_main_right
 site_regions_main_border: 0
-skip_main_content: 0
+skip_main_content: 1
 classes_main_container: ''
 settings_main_container___r_bg: '#ffffff'
 settings_main_container___r_tx: ''
