@@ -20,14 +20,10 @@ config:
       - block.block.solo_messages
       - block.block.solo_page_title
       - block.block.solo_userlogin
-
   actions:
     block.block.solo_userlogin:
       simple_config_update:
         region: popup_login_block
-    block.block.solo_account_menu:
-      simple_config_update:
-        region: header
     block.block.solo_branding:
       simple_config_update:
         region: header
