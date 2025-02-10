@@ -10,7 +10,6 @@ config:
   import:
     solo:
       - solo.settings
-      - block.block.solo_account_menu
       - block.block.solo_branding
       - block.block.solo_breadcrumbs
       - block.block.solo_content
