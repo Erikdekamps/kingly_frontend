@@ -36,6 +36,7 @@ config:
     block.block.solo_branding:
       simple_config_update:
         region: header
+        weight: -10
     block.block.solo_main_menu:
       simple_config_update:
         region: primary_menu
@@ -60,6 +61,19 @@ config:
     block.block.solo_footer:
       simple_config_update:
         region: footer_menu
+    # Disable blocks.
+    block.block.solo_tools:
+      simple_config_update:
+        status: false
+    block.block.solo_admin:
+      simple_config_update:
+        status: false
+    block.block.solo_search:
+      simple_config_update:
+        status: false
+    block.block.solo_search_form:
+      simple_config_update:
+          status: false
     system.theme:
       simpleConfigUpdate:
         default: solo
