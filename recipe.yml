@@ -3,41 +3,69 @@ type: 'Site'
 description: 'Configures Kingly frontend.'
 
 install:
-  - dxpr_theme
+  - solo
 
 config:
   strict: false
   import:
-    dxpr_theme:
-      - block.block.dxpr_theme_branding
-      - block.block.dxpr_theme_main_menu
+    solo:
+      - solo.settings
+      - block.block.solo_branding
+      - block.block.solo_breadcrumbs
+      - block.block.solo_content
+      - block.block.solo_footer
+      - block.block.solo_local_actions
+      - block.block.solo_local_tasks
+      - block.block.solo_main_menu
+      - block.block.solo_messages
+      - block.block.solo_page_title
+      - block.block.solo_userlogin
   actions:
-    block.block.dxpr_theme_tools:
-      setStatus: false
-    block.block.dxpr_theme_admin:
-      setStatus: false
-    block.block.dxpr_theme_search_form:
-      setStatus: false
-    block.block.dxpr_theme_search_form_primary:
-      setStatus: false
-    block.block.dxpr_theme_branding:
-      setRegion: navigation
-      setWeight: 1
-      setStatus: true
-      simpleConfigUpdate:
-        settings.use_site_name: false
-        settings.use_site_slogan: false
-    block.block.dxpr_theme_main_menu:
-      setRegion: navigation_collapsible
-      setWeight: 1
-      setStatus: true
-    block.block.dxpr_theme_page_title:
-      setRegion: page_title
-      setWeight: 1
-      setStatus: true
+    block.block.solo_userlogin:
+      simple_config_update:
+        region: popup_login_block
+    block.block.solo_branding:
+      simple_config_update:
+        region: header
+        weight: -10
+    block.block.solo_main_menu:
+      simple_config_update:
+        region: primary_menu
+    block.block.solo_messages:
+      simple_config_update:
+        region: system_messages
+    block.block.solo_page_title:
+      simple_config_update:
+        region: page_title
+    block.block.solo_breadcrumbs:
+      simple_config_update:
+        region: breadcrumb
+    block.block.solo_local_tasks:
+      simple_config_update:
+        region: content
+    block.block.solo_local_actions:
+      simple_config_update:
+        region: content
+    block.block.solo_content:
+      simple_config_update:
+        region: content
+    block.block.solo_footer:
+      simple_config_update:
+        region: footer_menu
+    block.block.solo_search_form:
+      simple_config_update:
+        region: fixed_search_block
+    block.block.solo_search_form_primary:
+      simple_config_update:
+        region: fixed_search_block
+        status: false
+    # Disable blocks.
+    block.block.solo_tools:
+      simple_config_update:
+        status: false
+    block.block.solo_admin:
+      simple_config_update:
+        status: false
     system.theme:
       simpleConfigUpdate:
-        default: dxpr_theme
-    system.site:
-      simpleConfigUpdate:
-        page.front: /node/1
+        default: solo
