@@ -8,7 +8,8 @@ install:
 config:
   strict: false
   import:
-    solo: '*'
+    solo:
+      - solo.settings
   actions:
 #    block.block.solo_powered:
 #      setStatus: false
