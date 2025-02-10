@@ -8,8 +8,8 @@ install:
 config:
   strict: false
   actions:
-    block.block.solo_powered:
-      setStatus: false
+#    block.block.solo_powered:
+#      setStatus: false
     system.theme:
       simpleConfigUpdate:
         default: solo
