@@ -3,41 +3,16 @@ type: 'Site'
 description: 'Configures Kingly frontend.'
 
 install:
-  - dxpr_theme
+  - solo
 
 config:
   strict: false
-  import:
-    dxpr_theme:
-      - block.block.dxpr_theme_branding
-      - block.block.dxpr_theme_main_menu
   actions:
-    block.block.dxpr_theme_tools:
+    block.block.solo_powered:
       setStatus: false
-    block.block.dxpr_theme_admin:
-      setStatus: false
-    block.block.dxpr_theme_search_form:
-      setStatus: false
-    block.block.dxpr_theme_search_form_primary:
-      setStatus: false
-    block.block.dxpr_theme_branding:
-      setRegion: navigation
-      setWeight: 1
-      setStatus: true
-      simpleConfigUpdate:
-        settings.use_site_name: false
-        settings.use_site_slogan: false
-    block.block.dxpr_theme_main_menu:
-      setRegion: navigation_collapsible
-      setWeight: 1
-      setStatus: true
-    block.block.dxpr_theme_page_title:
-      setRegion: page_title
-      setWeight: 1
-      setStatus: true
     system.theme:
       simpleConfigUpdate:
-        default: dxpr_theme
-    system.site:
-      simpleConfigUpdate:
-        page.front: /node/1
+        default: solo
+#    system.site:
+#      simpleConfigUpdate:
+#        page.front: /node/1
