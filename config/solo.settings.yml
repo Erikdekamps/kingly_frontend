@@ -33,7 +33,7 @@ footer_link: ''
 footer_link_label: ''
 footer_link_text: ''
 count_main: 1
-site_global_width: sw-1024
+site_global_width: sw-100
 site_global_breakpoints: sb-992
 site_global_regions_gap: '16'
 site_global_font_size: '20'
@@ -52,7 +52,7 @@ site_width_kingly_page: ''
 site_regions_collapse_order: 0
 site_node_date_format: solo_date_s
 site_import_google_font: 'https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&display=swap'
-site_css_injector: "body { font-family: 'Cantarell', sans-serif !important; }"
+site_css_injector: "body { font-family: 'Cantarell', sans-serif !important; }\r\n\r\n#header-inner,\r\n#primary-menu-inner,\r\n#system-messages-inner,\r\n#page-title-inner,\r\n#breadcrumb-inner,\r\n#footer-menu-inner,\r\n#copyright-inner {\r\n  max-width: var(--solo-px1024); \r\n  padding: var(--solo-px16); \r\n}"
 site_css_dynamic: ''
 site_js_dynamic: ''
 site_login_page_on: 0
