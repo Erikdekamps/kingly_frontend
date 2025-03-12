@@ -3,69 +3,48 @@ type: 'Site'
 description: 'Configures Kingly frontend.'
 
 install:
-  - solo
+  - kingly_theme
 
 config:
   strict: false
-  import:
-    solo:
-      - solo.settings
-      - block.block.solo_branding
-      - block.block.solo_breadcrumbs
-      - block.block.solo_content
-      - block.block.solo_footer
-      - block.block.solo_local_actions
-      - block.block.solo_local_tasks
-      - block.block.solo_main_menu
-      - block.block.solo_messages
-      - block.block.solo_page_title
-      - block.block.solo_userlogin
   actions:
-    block.block.solo_userlogin:
-      simple_config_update:
-        region: popup_login_block
-    block.block.solo_branding:
+    block.block.kingly_theme_branding:
       simple_config_update:
         region: header
         weight: -10
-    block.block.solo_main_menu:
+    block.block.kingly_theme_search_form:
       simple_config_update:
-        region: primary_menu
-    block.block.solo_messages:
-      simple_config_update:
-        region: system_messages
-    block.block.solo_page_title:
-      simple_config_update:
-        region: page_title
-    block.block.solo_breadcrumbs:
-      simple_config_update:
-        region: breadcrumb
-    block.block.solo_local_tasks:
-      simple_config_update:
-        region: content
-    block.block.solo_local_actions:
-      simple_config_update:
-        region: content
-    block.block.solo_content:
-      simple_config_update:
-        region: content
-    block.block.solo_footer:
-      simple_config_update:
-        region: footer_menu
-    block.block.solo_search_form:
-      simple_config_update:
-        region: fixed_search_block
-    block.block.solo_search_form_primary:
-      simple_config_update:
-        region: fixed_search_block
+        region: header
         status: false
+    block.block.kingly_theme_search_form_primary:
+      simple_config_update:
+        region: header
+        status: false
+    block.block.kingly_theme_messages:
+      simple_config_update:
+        region: content
+    block.block.kingly_theme_page_title:
+      simple_config_update:
+        region: content
+    block.block.kingly_theme_local_tasks:
+      simple_config_update:
+        region: content
+    block.block.kingly_theme_local_actions:
+      simple_config_update:
+        region: content
     # Disable blocks.
-    block.block.solo_tools:
+    block.block.kingly_theme_tools:
       simple_config_update:
         status: false
-    block.block.solo_admin:
+    block.block.kingly_theme_admin:
       simple_config_update:
         status: false
+    node.settings:
+      simple_config_update:
+        use_admin_theme: true
+    user.settings:
+      simple_config_update:
+        register: admin_only
     system.theme:
-      simpleConfigUpdate:
-        default: solo
+      simple_config_update:
+        default: kingly_theme
