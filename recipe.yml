@@ -3,7 +3,11 @@ type: 'Site'
 description: 'Configures Kingly frontend.'
 
 install:
-  - solo
+  - kingly_theme
 
 config:
   strict: false
+  actions:
+    system.theme:
+      simpleConfigUpdate:
+        default: kingly_theme
