@@ -8,6 +8,42 @@ install:
 config:
   strict: false
   actions:
+    block.block.kingly_theme_branding:
+      simple_config_update:
+        region: header
+        weight: -10
+    #    block.block.kingly_theme_main_menu:
+    #      simple_config_update:
+    #        region: primary_menu
+    block.block.kingly_theme_messages:
+      simple_config_update:
+        region: content
+    block.block.kingly_theme_page_title:
+      simple_config_update:
+        region: page_title
+    #    block.block.kingly_theme_breadcrumbs:
+    #      simple_config_update:
+    #        region: breadcrumb
+    block.block.kingly_theme_local_tasks:
+      simple_config_update:
+        region: content
+    block.block.kingly_theme_local_actions:
+      simple_config_update:
+        region: content
+    # Disable blocks.
+    block.block.kingly_theme_tools:
+      simple_config_update:
+        status: false
+    block.block.kingly_theme_admin:
+      simple_config_update:
+        status: false
+    node.settings:
+      simple_config_update:
+        use_admin_theme: true
+    user.settings:
+      simple_config_update:
+        register: admin_only
     system.theme:
-      simpleConfigUpdate:
+      simple_config_update:
+        admin: 'gin'
         default: kingly_theme
