@@ -12,18 +12,20 @@ config:
       simple_config_update:
         region: header
         weight: -10
-    #    block.block.kingly_theme_main_menu:
-    #      simple_config_update:
-    #        region: primary_menu
+    block.block.kingly_theme_search_form:
+      simple_config_update:
+        region: header
+        status: false
+    block.block.kingly_theme_search_form_primary:
+      simple_config_update:
+        region: header
+        status: false
     block.block.kingly_theme_messages:
       simple_config_update:
         region: content
     block.block.kingly_theme_page_title:
       simple_config_update:
-        region: page_title
-    #    block.block.kingly_theme_breadcrumbs:
-    #      simple_config_update:
-    #        region: breadcrumb
+        region: content
     block.block.kingly_theme_local_tasks:
       simple_config_update:
         region: content
@@ -45,5 +47,4 @@ config:
         register: admin_only
     system.theme:
       simple_config_update:
-        admin: 'gin'
         default: kingly_theme
