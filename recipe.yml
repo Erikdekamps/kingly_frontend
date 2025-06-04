@@ -5,6 +5,7 @@ description: 'Configures Kingly frontend.'
 install:
   - menu_link_content
   - help
+  - search
   - kingly_theme
 
 config:
