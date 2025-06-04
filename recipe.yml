@@ -9,10 +9,10 @@ install:
 config:
   strict: false
   actions:
-    block.block.kingly_theme_main_navigation:
-      simple_config_update:
-        region: primary_menu
-        weight: -10
+#    block.block.kingly_theme_main_navigation:
+#      simple_config_update:
+#        region: primary_menu
+#        weight: -10
     block.block.kingly_theme_search_form:
       simple_config_update:
         region: header
