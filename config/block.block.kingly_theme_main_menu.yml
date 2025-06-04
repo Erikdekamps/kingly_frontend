@@ -7,7 +7,7 @@ dependencies:
     - system
   theme:
     - kingly_theme
-id: kingly_theme_mainnavigation
+id: kingly_theme_main_menu
 theme: kingly_theme
 region: primary_menu
 weight: 0
