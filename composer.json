@@ -5,9 +5,9 @@
   "type": "drupal-recipe",
   "license": ["GPL-2.0-or-later"],
   "require": {
-    "drupal/core": ">=10.3",
-    "drupal/solo": "^1.0",
-    "erikdekamps/kingly_theme": "dev-main"
+      "drupal/core": "^10.3 || ^11",
+      "drupal/solo": "^1.0",
+      "erikdekamps/kingly_theme": "dev-main"
   }
 }
 
