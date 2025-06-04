@@ -9,30 +9,30 @@ install:
 config:
   strict: false
   actions:
-    block.block.kingly_theme_branding:
-      simple_config_update:
-        region: header
-        weight: -10
-    block.block.kingly_theme_search_form:
-      simple_config_update:
-        region: header
-        status: false
-    block.block.kingly_theme_search_form_primary:
-      simple_config_update:
-        region: header
-        status: false
-    block.block.kingly_theme_messages:
-      simple_config_update:
-        region: content
-    block.block.kingly_theme_page_title:
-      simple_config_update:
-        region: content
-    block.block.kingly_theme_local_tasks:
-      simple_config_update:
-        region: content
-    block.block.kingly_theme_local_actions:
-      simple_config_update:
-        region: content
+#    block.block.kingly_theme_branding:
+#      simple_config_update:
+#        region: header
+#        weight: -10
+#    block.block.kingly_theme_search_form:
+#      simple_config_update:
+#        region: header
+#        status: false
+#    block.block.kingly_theme_search_form_primary:
+#      simple_config_update:
+#        region: header
+#        status: false
+#    block.block.kingly_theme_messages:
+#      simple_config_update:
+#        region: content
+#    block.block.kingly_theme_page_title:
+#      simple_config_update:
+#        region: content
+#    block.block.kingly_theme_local_tasks:
+#      simple_config_update:
+#        region: content
+#    block.block.kingly_theme_local_actions:
+#      simple_config_update:
+#        region: content
     # Disable blocks.
     block.block.kingly_theme_tools:
       simple_config_update:
