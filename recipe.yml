@@ -4,14 +4,15 @@ description: 'Configures Kingly frontend.'
 
 install:
   - menu_link_content
-  - help
-  - search
   - kingly_theme
 
 config:
   strict: false
   actions:
     # Disable blocks.
+    block.block.kingly_theme_search_form:
+      simple_config_update:
+        status: false
     block.block.kingly_theme_tools:
       simple_config_update:
         status: false
