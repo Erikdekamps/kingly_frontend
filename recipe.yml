@@ -10,25 +10,25 @@ config:
   strict: false
   actions:
     # Move block to correct region.
-    block.block.kingly_theme_page_title:
-      simple_config_update:
-        region: 'page_title'
-    block.block.kingly_theme_messages:
-      simple_config_update:
-        region: 'system_messages'
+    #    block.block.kingly_theme_page_title:
+    #      simple_config_update:
+    #        region: 'page_title'
+    #    block.block.kingly_theme_messages:
+    #      simple_config_update:
+    #        region: 'system_messages'
     # Disable blocks.
-        block.block.kingly_theme_search_form:
-          simple_config_update:
-            status: false
-        block.block.kingly_theme_search_form_primary:
-          simple_config_update:
-            status: false
-        block.block.kingly_theme_tools:
-          simple_config_update:
-            status: false
-        block.block.kingly_theme_admin:
-          simple_config_update:
-            status: false
+    #    block.block.kingly_theme_search_form:
+    #      simple_config_update:
+    #        status: false
+    #    block.block.kingly_theme_search_form_primary:
+    #      simple_config_update:
+    #        status: false
+    #    block.block.kingly_theme_tools:
+    #      simple_config_update:
+    #        status: false
+    #    block.block.kingly_theme_admin:
+    #      simple_config_update:
+    #        status: false
     # Update settings.
     system.theme:
       simple_config_update:
